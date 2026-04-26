@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+#header {
+    background-image:url(photofin.jpg) ;
+    background-position: center;
+    background-size: cover;
+    height: -550px;
+    width: 100%;
+}
+
+.container {
+    padding: 10px 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #c04d0a;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 1.2s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.nav-link {
+    transition: transform 0.3s ease, font-size 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    font-size: 15px;
+}
+
+.name{
+    color: rgba(255, 255, 255, 0.61);
+    font-size: 35px;
+    font-weight: bold;
+    text-align: none;
+    margin-top: 150px;
+}
+
+.notice {
+  display: flex;
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Vertically centers children */
+  margin-top: 30px;
+  min-height: 300px;
+}
+
+.calendar-container {
+  position: relative;
+  width: 250px;
+  text-align: center; 
+}
+
+.calendar-img {
+  width: 250px;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.calendar-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 0 10px #625c5c;
+  pointer-events: none;
+}
+
+.calendar-container:hover .calendar-img {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #54625f;
+}
+
+.cross {
+  display: flex;
+  flex-direction: row; /* Explicitly horizontal layout */
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Vertically centers children */
+  margin-top: 30px;
+  min-height: 300px;
+  gap: 50px; /* Adds space between calendar and cross elements */
+}
+
+.calendar-cross {
+  position: relative;
+  width: 250px;
+  text-align: center;
+}
+
+.calendar-photo {
+  width: 250px;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.calendar-cross:hover .calendar-photo {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #54625f;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000000; 
+  color: #534e4e;         
+  font-size: 14px;
+}

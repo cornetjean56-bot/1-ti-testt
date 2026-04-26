@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mauritius Athletic Association</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <a href="home.html">
+          <img src="good logo.png" alt="logo" class="logo">
+        </a>
+        <ul>
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li><a href="about us.html" class="nav-link">About Us</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <h1>Mauritius Athletics <span>Association</span></h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- Updates Section -->
+  <section class="updates">
+    <div class="updates-container">
+      <!-- Latest News -->
+      <div class="updates-box news">
+        <h2>Latest News</h2>
+        <article>
+          <h3>2026 AFFILIATION FEE</h3>
+          <time>January 8, 2026</time>
+          <p>Annual MAA affiliation fee of Rs 1,000 is payable no later than Friday, 31 January 2026.</p>
+        </article>
+        <article>
+          <h3>2025 Youth Combined Event – Final</h3>
+          <time>November 25, 2025</time>
+          <p>Programme and start list available for your kind attention.</p>
+        </article>
+        <article>
+          <h3>Inter Club Relay Championships</h3>
+          <time>November 17, 2025</time>
+          <p>Rules and E-participation Form for the Inter Relay Championships at Maryse Justin Stadium Reduit.</p>
+        </article>
+      </div>
+
+      <div class="updates-box reports">
+        <h2>Latest Reports</h2>
+        <ul>
+          <li><strong>MAA CALENDAR (JULY 2025 – JUNE 2026)</strong> <time>July 24, 2025</time></li>
+          <li><strong>2025 MAA Calendar of Activities</strong> <time>January 9, 2023</time></li>
+          <li><strong>2023 CROSS COUNTRY LEAGUE & CHAMPIONSHIPS</strong> <time>December 8, 2022</time></li>
+          <li><strong>IOIG 2023</strong> <time>December 8, 2022</time></li>
+          <li><strong>Lucozade Championnats Nationaux Jeunes 2023</strong> <time>December 8, 2022</time></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Designed by Jean Railey Cornet
+  </footer>
+
+
+  <script>
+    const border = document.createElement("div");
+    border.style.position = "fixed";
+    border.style.bottom = "0";
+    border.style.left = "0";
+    border.style.width = "0";
+    border.style.height = "4px";
+    border.style.backgroundColor = "#ff6600";
+    border.style.zIndex = "9999";
+    border.style.transition = "width 1s ease-out";
+    document.body.appendChild(border);
+    setTimeout(() => {
+      border.style.width = "100%";
+    }, 100);
+  </script>
+
+  <script src="home.js"></script>
+</body>
+</html>

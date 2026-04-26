@@ -1,0 +1,138 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: whitesmoke;
+}
+
+/* Header section */
+#header {
+  background-image:url(stadee.jpg) ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 680px;
+  background-position: center;
+  width: 100%;
+}
+
+.container {
+  padding: 10px 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 140px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #c04d0a;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.2s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.nav-link {
+  padding: 9px 16px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease-in-out, font-size 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  font-size: 20px;
+}
+
+.header-text {
+  margin-top: 10%;
+  font-size: 50px;
+}
+
+.header-text h1 {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 0;
+  font-size: 50px;
+}
+
+.header-text p {
+  font-family: Impact, Haettenschweiler, sans-serif;
+}
+
+.header-text h1 span {
+  color: rgb(179, 82, 46);
+}
+
+.committee {
+  margin: 50px auto;
+  width: 90%;
+  overflow-x: auto;
+}
+
+.committee table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.committee th, .committee td {
+  border: 1px solid #444;
+  padding: 12px;
+}
+
+.committee th {
+  background-color: #3d3d3d;
+  color: rgb(255, 255, 255);
+}
+
+.committee tr:nth-child(even) {
+  background-color: #a23901b9;
+}
+
+.committee tr:nth-child(odd) {
+  background-color: #f8f8f8;
+  color: rgb(0, 0, 0);
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #534e4e;
+  margin-top: 40px;
+}

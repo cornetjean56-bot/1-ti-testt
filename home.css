@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #000;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background: url('IMG-20251024-WA0009.jpg') center/cover no-repeat;
+  position: relative;
+}
+
+.container {
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #973700;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.2s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.nav-link {
+  transition: transform 0.3s ease, font-size 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  font-size: 20px;
+}
+
+/* Header Text */
+.header-text {
+  margin-top: 15%;
+  text-align: center;
+  color: #fff;
+}
+
+.header-text h1 {
+  font-size: 50px;
+  font-family: monospace, sans-serif;
+}
+
+.header-text h1 span {
+  color: oklch(69.26% 0.14311 40.371);
+}
+
+.updates {
+  position: relative;
+  background: url('IMG-20251024-WA0009.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.updates::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5); 
+}
+.updates .updates-content {
+  position: relative;
+  color: white;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000000; 
+  color: #534e4e;         
+  font-size: 14px;
+}
